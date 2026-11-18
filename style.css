@@ -1,0 +1,354 @@
+
+/* ================================= */
+/* ESTILOS GENERALES */
+/* ================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+
+/* ================================= */
+/* INICIO DE SESION */
+/* ================================= */
+
+.login-contenedor {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #12345a, #2563eb);
+}
+
+.login-caja {
+    background-color: white;
+    width: 100%;
+    max-width: 420px;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.login-caja h1 {
+    text-align: center;
+    color: #12345a;
+    font-size: 30px;
+}
+
+.login-caja > p {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.login-caja h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #12345a;
+}
+
+
+/* ================================= */
+/* ENCABEZADO */
+/* ================================= */
+
+header {
+    background-color: #12345a;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+header span {
+    display: inline-block;
+    background-color: #2563eb;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+/* ================================= */
+/* USUARIO Y CERRAR SESION */
+/* ================================= */
+
+.usuario-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.usuario-panel p {
+    margin: 0;
+}
+
+.btn-salir {
+    background-color: #dc2626;
+    margin: 0;
+    padding: 10px 18px;
+}
+
+.btn-salir:hover {
+    background-color: #991b1b;
+}
+
+
+/* ================================= */
+/* MENU DE NAVEGACION */
+/* ================================= */
+
+nav {
+    background-color: #1e293b;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #2563eb;
+}
+
+
+/* ================================= */
+/* CONTENIDO PRINCIPAL */
+/* ================================= */
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+
+/* ================================= */
+/* MODULOS */
+/* ================================= */
+
+.modulo {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.modulo h2 {
+    color: #12345a;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 10px;
+}
+
+.modulo h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* ================================= */
+/* FORMULARIOS */
+/* ================================= */
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: white;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+
+/* ================================= */
+/* BOTONES */
+/* ================================= */
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-eliminar {
+    background-color: #dc2626;
+    margin: 0;
+    padding: 7px 12px;
+}
+
+.btn-eliminar:hover {
+    background-color: #991b1b;
+}
+
+
+/* ================================= */
+/* RESULTADOS */
+/* ================================= */
+
+.resultado {
+    background-color: #eff6ff;
+    border-left: 4px solid #2563eb;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    min-height: 50px;
+}
+
+.nota {
+    color: #64748b;
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+
+/* ================================= */
+/* TABLAS */
+/* ================================= */
+
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    min-width: 450px;
+}
+
+th {
+    background-color: #12345a;
+    color: white;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #cbd5e1;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+
+/* ================================= */
+/* PIE DE PAGINA */
+/* ================================= */
+
+footer {
+    background-color: #12345a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+
+/* ================================= */
+/* ADAPTACION A CELULARES */
+/* ================================= */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 8px;
+    }
+
+    main {
+        padding: 0 12px;
+    }
+
+    .modulo {
+        padding: 18px;
+    }
+
+    .login-caja {
+        padding: 25px;
+    }
+
+    .usuario-panel {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .btn-eliminar {
+        width: auto;
+    }
+
+}
